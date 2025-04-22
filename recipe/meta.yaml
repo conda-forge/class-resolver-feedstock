@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - importlib-metadata >3.6  # strictly, py<310
+    - typing_extensions
 
 test:
   requires:
