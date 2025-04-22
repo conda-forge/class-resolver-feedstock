@@ -18,7 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - uv-build
+    - uv-build >=0.6.6,<0.7
   run:
     - python >={{ python_min }}
     - importlib-metadata >3.6  # strictly, py<310
