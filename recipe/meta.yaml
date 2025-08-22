@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 # Latest python_min is defined in https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/main/recipe/conda_build_config.yaml
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/c/class-resolver/class_resolver-{{ version }}.tar.gz
-  sha256: 8a3c20ab771925477f65cad8a49bb431e11543c82fbfadbf611c6769228a6cae
+  sha256: 1a20c3e140b608ec29b56cf85433ee85fac6d7aebedf39717d71a56bb564618e
 
 build:
   noarch: python
@@ -18,10 +18,9 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - uv-build >=0.6.6,<0.7
+    - uv-build >=0.6.6,<1.0
   run:
     - python >={{ python_min }}
-    - importlib-metadata >3.6  # strictly, py<310
     - typing_extensions
 
 test:
