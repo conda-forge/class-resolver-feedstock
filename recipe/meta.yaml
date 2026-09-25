@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 # Latest python_min is defined in https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/main/recipe/conda_build_config.yaml
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/c/class-resolver/class_resolver-{{ version }}.tar.gz
-  sha256: 79325371462991e72a0b71d6cdb7ad61bbfdd373149d116ba0ae4025417d9d49
+  sha256: eae529e7eb620973b13b88f36e198479e3b28dc8f0297ea0c8ecdc78d9a962b0
 
 build:
   noarch: python
